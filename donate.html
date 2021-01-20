@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasha Foundation</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('donation.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+    .left{
+        
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .left div{
+        text-align: center;
+        line-height: 19px;
+        font-size: 16px;
+        font-weight: bold;
+            }
+    .left img{
+        width: 120px;
+        
+        
+    }
+    .mid{
+        display: block;
+        width: 48%;
+        /* border: 2px solid green; */
+        font-weight: bold;
+        margin: 20px auto;
+        
+    
+
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        color: white;
+        display: inline-block;
+        font-size: 30px;
+        
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        /* To erase underline */
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: rgb(224, 99, 15);
+    }
+    .btn{
+        margin: 0px 9px;
+        color: black;
+        padding: 4px 14px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Baloo Bhaina 2', cursive;
+        
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        /* margin: 50px 900px; */
+        padding: 50px;
+        width: 30%;
+        border-radius: 28px;
+        color: rgb(247, 247, 247);
+        font-family: 'Baloo Bhaina 2', cursive;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border:  2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+    .razorpay-embed-btn {
+        display: block;
+        width: 400px;
+        margin: auto;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <div>Aasha Foundation</div>
+            <img src="children-education-book-logo-vector-21270798.jpg" alt="fit">
+            
+            
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="index1.html" class="active">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- rightbox for buttons -->
+            <button class="btn"><a href="contact_us.html">Call Us Now</a></button>
+            <button class="btn"><a href="email_us.html">Email Us</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Aasha Foundation</h1>
+        <form>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+        </div>
+        <!-- <button class="btn"><a href="submit.html">Submit</a></button> -->
+        <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_GR8919jDZJ4T23/view" data-text="Pay Now" data-color="#528FF0" data-size="large">
+            <script>
+              (function(){
+                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                rzp && rzp.init && rzp.init()}})();
+            </script>
+          </div>
+              
+    </form>
+    </div>
+</body>
+</html>
